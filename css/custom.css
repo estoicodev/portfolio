@@ -1,1 +1,12 @@
-/* You can customize theme styles here */
+.footer__left {
+  order: 2;
+}
+
+@media (min-width:992px){
+  .footer__left {
+    order: 1;
+  }
+    .footer__links {
+    order: 2;
+  }
+}
