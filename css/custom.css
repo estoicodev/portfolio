@@ -1,4 +1,10 @@
-.btn.btn-secondary {
+.btn-group  {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn-secondary {
   position: relative;
   color: #000;
   background-color: transparent;
@@ -8,7 +14,7 @@
   cursor: pointer;
 }
 
-.btn.btn-secondary:hover {
+.btn-secondary:hover {
   color: #fff;
   background-color: #000;
   border-color: #000;
