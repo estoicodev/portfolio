@@ -1,3 +1,57 @@
+.skills {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.skills__item {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 20px;
+  border: 2px solid #343a40;
+  background: transparent;
+  border-radius: 8px;
+  color: #343a40;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2)
+  }
+}
+
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2)
+  }
+}
+
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+}
+
+.hvr-pop:active,
+.hvr-pop:focus,
+.hvr-pop:hover {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1
+}
+
 .footer__left {
   order: 2;
 }
