@@ -1,3 +1,20 @@
+.btn.btn-secondary {
+  position: relative;
+  color: #000;
+  background-color: transparent;
+  border: 1.5px solid #000;
+  will-change: border-color, color, background-color;
+  transition: border-color, color, background-color 0.35s ease;
+  cursor: pointer;
+}
+
+.btn.btn-secondary:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+
 .skills {
   display: flex;
   gap: 20px;
